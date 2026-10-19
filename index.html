@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"/>
+<title>SRS Mecánica | Desde 1977</title>
+<link href="style.css" rel="stylesheet"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/></head><body>
+<!--            ENCABEZADO Y MENÚ             -->
+<header class="encabezado">
+<a class="logo" href="#inicio"><img alt="SRS Mecánica" src="logo.png" width="155"/></a>
+<!-- NIVEL: Barra de menu -->
+<button aria-expanded="false" aria-label="Abrir menú" class="btn-menu" id="btn-menu">☰</button>
+<nav class="menu" id="menu"><a href="#nosotros">Nosotros</a><a href="#catalogo">Servicios</a><a href="#tecnologia">Tecnología</a><a href="#galeria">Galería</a><a href="#contacto">Contacto</a></nav>
+<!-- NIVEL 1.2: Modo claro/oscuro -->
+<button aria-label="Cambiar tema" class="btn-tema" id="btn-tema">🌙</button>
+</header>
+<main>
+<!--               INICIO                          -->
+<section class="hero" id="inicio">
+<!-- NIVEL: saludo según la hora -->
+<h1 id="saludo">¡Hola!</h1>
+<p>Mecánica · Tecnología · Competición. Experiencia familiar desde 1977.</p>
+ <div class="promo">
+  <p>🎉 <strong>¡En 2027 cumplimos 50 años!</strong></p>
+  <p>La cuenta regresiva para nuestro año aniversario:</p>
+  <div id="cuenta-regresiva" class="cuenta">Cargando...</div>
+</div>   
+<!-- NIVEL: cuenta regresiva -->
+
+<img alt="Suspensión de un vehículo" src="foto-007.png" width="354"/><p>Soluciones para motos de calle, vehículos de competición y empresas.</p></section><section class="seccion" id="nosotros"><h2>Nuestra historia</h2><p>SRS Mecánica fue fundada en 1977 por César Fernández y Ana Mattei, cuando estaban formando su familia. Comenzaron reparando motos de vecinos en el garage de los padres de César.</p><div class="grilla-productos"><article class="tarjeta"><h3>1977 · El comienzo</h3><p>Las primeras reparaciones y la participación de César en motocross marcaron el inicio del taller.</p></article><article class="tarjeta"><h3>1980s · Capacitación</h3><p>César realizó cursos con Honda Argentina y otras empresas. También se especializó en la restauración de motos antiguas.</p></article><article class="tarjeta"><h3>Se incorpora Matías</h3><p>Luego de su formación técnica, Matías se sumó al taller. Junto a César, pasó de competir a acompañar a otros pilotos y mantener sus vehículos en pista.</p></article><article class="tarjeta"><h3>Del motociclismo a los autos</h3><p>El trabajo en las suspensiones del auto del piloto Adrián Hang abrió una nueva etapa en automovilismo y adquisición de datos.</p></article></div></section>
+<!--                CATÁLOGO              -->
+<section class="seccion" id="catalogo">
+<h2>Nuestros servicios</h2>
+<div class="herramientas">
+<!-- Filtros por categoría    -->
+<div class="filtros" id="filtros">
+<button class="filtro activo" data-categoria="todos">Todos</button>
+<button class="filtro" data-categoria="motos">Motos y suspensiones</button>
+<button class="filtro" data-categoria="competicion">Competición</button>
+<button class="filtro" data-categoria="industria">Industria</button>
+</div>
+<!-- Buscador -->
+<input aria-label="Buscar servicio" id="buscador" placeholder="Buscar servicio…" type="search"/>
+</div>
+<!-- acá JS crea las tarjetas -->
+<div class="grilla-productos" id="lista-productos"></div>
+<p class="oculto" id="sin-resultados">No encontramos servicios con esa búsqueda.</p>
+</section><section class="seccion" id="competicion"><h2>Apoyo total en cada carrera</h2><p>Acompañamos a pilotos y equipos con mantenimiento, repuestos y trabajo especializado en suspensiones y chasis. La adquisición de datos permite analizar información del vehículo y del piloto para orientar mejoras en el rendimiento.</p><img alt="Auto de competición en pista" class="miniatura" src="fotos/foto-000.png"/></section><section class="seccion" id="tecnologia"><h2>Tecnología que nos diferencia</h2><div class="grilla-productos"><article class="tarjeta"><h3>Infraestructura</h3><p>Maquinaria especializada y banco de pruebas para motos.</p></article><article class="tarjeta"><h3>Mecanizados CNC</h3><p>Torno y fresadora a control numérico para trabajos de precisión y fabricación en serie.</p></article><article class="tarjeta"><h3>Repuestos</h3><p>Componentes para amortiguadores, aceites, filtros y pastillas de freno.</p></article><article class="tarjeta"><h3>Fabricación</h3><p>Amortiguadores, partes y herramientas específicas para suspensiones.</p></article></div><h3>Marcas</h3><p>Service oficial de Benelli, Voge y Suzuki. Representante en Argentina de Xtreme, marca italiana de amortiguadores.</p></section><section class="seccion" id="equipo"><h2>Nuestro equipo</h2><p>Una empresa que continúa siendo familiar.</p><div class="grilla-productos"><article class="tarjeta"><h3>César Fernández y Ana Mattei</h3><p>Área de motos.</p></article><article class="tarjeta"><h3>Iván Retamar</h3><p>Ayudante en el área de motos.</p></article><article class="tarjeta"><h3>Matías Fernández</h3><p>Suspensiones, amortiguadores, adquisición de datos y fabricación.</p></article><article class="tarjeta"><h3>Natalia Ratque</h3><p>Amortiguadores y fabricación.</p></article><article class="tarjeta"><h3>Augusto Paredes</h3><p>Trabajos con tornos a control numérico.</p></article><article class="tarjeta"><h3>Santiago</h3><p>Se incorporó al equipo luego de su pasantía en una escuela técnica.</p></article></div></section>
+<!--                   CARRITO                        -->
+
+<!--                       GALERÍA                      -->
+<section class="seccion" id="galeria">
+<h2>Galería</h2>
+<p>Tocá una foto para ampliarla. Cerrala con un clic o con Escape.</p>
+<div class="galeria">
+<img alt="Piloto" class="miniatura" src="foto-002.png"/>
+<img alt="Junto a una moto de competición" class="miniatura" src="foto-003.png"/>
+<img alt="Moto restaurada" class="miniatura" src="foto-005.jpg"/>
+<img alt="Trabajo técnico en competición" class="miniatura" src="foto-009.png"/>
+</div>
+<!-- Ventana que muestra la foto agrandada -->
+<div class="lightbox oculto" id="lightbox">
+<span class="lightbox-cerrar">✕</span>
+<img alt="" id="lightbox-img"/>
+</div>
+</section>
+<!--  CARRUSEL de testimonios -->
+
+<!-- PREGUNTAS FRECUENTES  -->
+<section class="seccion" id="faq">
+<h2>Preguntas frecuentes</h2>
+<div class="faq">
+<div class="faq-item">
+<button class="faq-pregunta">¿Qué vehículos atienden? <span>+</span></button>
+<div class="faq-respuesta">Motos de mediana y alta cilindrada y de competición. También realizamos trabajos especializados en suspensiones para autos y otros vehículos.</div>
+</div>
+<div class="faq-item">
+<button class="faq-pregunta">¿Realizan trabajos para empresas? <span>+</span></button>
+<div class="faq-respuesta">Sí. Realizamos mecanizados, fabricación de piezas, asesoramiento técnico y capacitaciones relacionadas con suspensiones de bicicletas.</div>
+</div>
+<div class="faq-item">
+<button class="faq-pregunta">¿Qué medios de pago aceptan? <span>+</span></button>
+<div class="faq-respuesta">Efectivo, cheque y transferencia bancaria.</div>
+</div>
+</div>
+</section>
+<!-- CALCULADORA -->
+
+<!--  CONTACTO -->
+<section class="seccion" id="contacto">
+<h2>Contacto</h2><p>Santa Fe, Argentina.</p><p>Describí tu vehículo y el trabajo que necesitás. Este formulario es una demostración escolar: valida los datos, pero no envía mensajes.</p>
+<form class="formulario" id="form-contacto" novalidate="">
+<label for="nombre">Nombre</label>
+<input id="nombre" placeholder="Tu nombre" type="text"/>
+<small class="error" id="error-nombre"></small>
+<label for="email">Email</label>
+<input id="email" placeholder="tuemail@ejemplo.com" type="email"/>
+<small class="error" id="error-email"></small>
+<label for="mensaje">Mensaje</label>
+<textarea id="mensaje" placeholder="Escribí tu consulta" rows="4"></textarea>
+<small class="error" id="error-mensaje"></small>
+<button class="btn" type="submit">Validar consulta</button>
+<p class="exito oculto" id="form-exito">Datos correctos. Demostración completada: no se envió ningún mensaje.</p>
+</form>
+</section>
+</main>
+<!--  botón volver arriba -->
+<button aria-label="Volver arriba" class="btn-arriba oculto" id="btn-arriba">⬆</button>
+<footer class="footer">
+<!--año automático -->
+<p>© <span id="anio"></span> SRS Mecánica · Proyecto escolar</p>
+</footer>
+<script src="script.js"></script>
+</body></html>
